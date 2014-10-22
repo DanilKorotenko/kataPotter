@@ -17,4 +17,14 @@ public class BookSet
 		return _bookMap.size();
 	}
 
+	public int numberOfBooks()
+	{
+		int result = 0;
+		for (Map.Entry<Integer, Integer> entry : _bookMap.entrySet())
+		{
+			result += entry.getValue();
+		}
+		return result;
+	}
+
 }
