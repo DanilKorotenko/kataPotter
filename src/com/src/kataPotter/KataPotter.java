@@ -22,6 +22,10 @@ public class KataPotter
 		
 		System.out.println("book series:" + bookSet.numberOfSeries());
 		System.out.println("books quantity:" + bookSet.numberOfBooks());
+		
+		System.out.println("total price:" + 
+				BookSetCalculator.calculatePrice(bookSet));
+		
 	}
 
 }
